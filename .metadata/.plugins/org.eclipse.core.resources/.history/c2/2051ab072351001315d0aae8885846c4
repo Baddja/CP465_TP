@@ -1,0 +1,18 @@
+import java.util.Hashtable;
+
+public class ItemList {
+	private Hashtable<Integer, Hashtable<String, Float>> items = new Hashtable<Integer, Hashtable<String, Float>>();
+	
+	public ItemList(){
+		this.next_l(1);
+		
+	}
+	
+	public void next_l(int l){
+		items.put(l, new Hashtable<String, Float>());
+	}
+	
+	public void add_item(int l, String k, Float s){
+		items.get(l).put(k, s);
+	}
+}

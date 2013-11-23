@@ -1,0 +1,15 @@
+import java.util.Hashtable;
+
+
+public class ItemList {
+	private Hashtable<K, V> items = new Hashtable;
+	
+	public ItemList(){}
+	
+	public Add_Level(int n){
+		items.put(n, new Hashtable());
+	}
+	
+	public 
+	
+}

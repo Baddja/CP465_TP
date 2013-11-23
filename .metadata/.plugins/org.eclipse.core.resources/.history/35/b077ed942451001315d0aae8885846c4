@@ -1,0 +1,20 @@
+
+import java.util.Map;
+
+public class ItemList {
+	private Map<Integer, Hashmap<String[], Float>> items = new Hashmap<Integer, Hashmap<String[], Float>>();
+	
+	public ItemList(){
+		this.next_l(1);	
+	}
+	
+	public void next_l(int l){
+		items.put(l, new Hashtable<String[], Float>());
+	}
+	
+	public void add_item(String[] k, Float s){
+		items.get(k.length).put(k, s);
+	}
+	
+	public 
+}

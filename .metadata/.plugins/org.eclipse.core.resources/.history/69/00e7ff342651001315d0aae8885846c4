@@ -1,0 +1,32 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class L_List {
+	private Map<Integer, HashMap<String[], Float>> items = new HashMap<Integer, HashMap<String[], Float>>();
+	
+	public L_List(){
+		this.next_L();	
+	}
+	
+	/*
+	 * next_L: 
+	 * 
+	 * Creates an empty hashmap for the next L
+	 */
+	public void next_L(){
+		items.put(items.size()+1, new HashMap<String[], Float>());
+	}
+	
+	/*
+	 * add_item: item , s
+	 * item - the set of elements that make up an item
+	 * s - the support 
+	 * 
+	*/
+	public void add_item(String[] item, Float s){
+		items.get(item.length).put(item, s);
+	}
+	
+	public 
+}
