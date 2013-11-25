@@ -1,0 +1,15 @@
+
+public class Apriori_Control {
+	
+	public static void main(String[] args){
+		L_List L = new L_List();
+		C_List C = new C_List();	
+		
+		ArrayList<String> test = new ArrayList<String>();
+		
+		L.add_item(item, s);
+		
+		
+		
+	}
+}

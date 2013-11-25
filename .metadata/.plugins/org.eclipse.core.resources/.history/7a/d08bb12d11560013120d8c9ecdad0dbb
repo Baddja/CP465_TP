@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class C_Builder {
+	
+	public C_Builder(){}
+	
+	public void build_Cn(int n, HashMap<String[], Float> L_1, HashMap<String[],Float> L_nm1){
+		Iterator it = L_nm1.entrySet().iterator();
+	    while (it.hasNext()) {
+	        Map.Entry pairs = (Map.Entry)it.next();
+	        System.out.println(pairs.getKey() + " = " + pairs.getValue());
+	        it.remove(); // avoids a ConcurrentModificationException
+	    }
+	}
+	
+}

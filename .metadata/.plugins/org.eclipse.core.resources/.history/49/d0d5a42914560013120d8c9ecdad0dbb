@@ -1,0 +1,18 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class C_Builder {
+	
+	public C_Builder(){}
+	
+	public void build_Cn(int n, HashMap<ArrayList<String>, Float> L_1, HashMap<ArrayList<String>,Float> L_nm1){
+		for(ArrayList<String> item_nm1 : L_nm1.keySet()){
+			List<String> candidate = new ArrayList<String>
+			for(ArrayList<String> item_1 : L_1.keySet()){
+
+			}
+		}
+	}
+	
+}

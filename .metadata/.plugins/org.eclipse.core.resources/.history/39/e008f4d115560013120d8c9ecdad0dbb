@@ -1,0 +1,25 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class C_Builder {
+	
+	public C_Builder(){}
+	
+	public void build_Cn(int n, L_List L, C_List C){
+		C.clear_C();
+		
+		for(ArrayList<String> item_nm1 : L_nm1.keySet()){
+			for(ArrayList<String> item_1 : L_1.keySet()){
+				List<String> candidate = new ArrayList<String>();
+				candidate.addAll(item_nm1);
+				candidate.addAll(item_1);
+				
+				Cn.put(candidate, 0);
+				
+				
+			}
+		}
+	}
+	
+}

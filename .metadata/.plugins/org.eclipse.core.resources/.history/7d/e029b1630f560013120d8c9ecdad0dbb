@@ -1,0 +1,18 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class C_List {
+	private Map<String[],Float> items = new HashMap<String[],Float>();
+	
+	public C_List() {
+		
+	}
+	
+	public void add_item(String[] item, Float s){
+		items.put(item, s);
+	}
+
+	public HashMap<String[], Float> get_C(){
+		return items.get(level);
+	}
+}

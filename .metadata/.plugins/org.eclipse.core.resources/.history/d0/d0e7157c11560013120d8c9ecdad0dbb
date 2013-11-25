@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class C_Builder {
+	
+	public C_Builder(){}
+	
+	public void build_Cn(int n, HashMap<String[], Float> L_1, HashMap<String[],Float> L_nm1){
+		for(String[] key : L_nm1.keySet()){
+			
+		}
+	}
+	
+}

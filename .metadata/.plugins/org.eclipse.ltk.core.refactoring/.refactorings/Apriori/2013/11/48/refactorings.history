@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Cn_Builder.java&apos; to &apos;C_Builder.java&apos;&#x0D;&#x0A;- Original project: &apos;Apriori&apos;&#x0D;&#x0A;- Original element: &apos;Cn_Builder.java&apos;&#x0D;&#x0A;- Renamed element: &apos;C_Builder.java&apos;" description="Rename compilation unit &apos;Cn_Builder.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Cn_Builder.java" name="C_Builder.java" references="false" stamp="1385411276971" version="1.0"/>
+</session>

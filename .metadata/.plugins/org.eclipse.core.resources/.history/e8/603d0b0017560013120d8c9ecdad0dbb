@@ -1,0 +1,11 @@
+
+public class Apriori_Control {
+
+	public static void main(String[] args){
+		private L_List L = new L_List();
+		private C_List C = new C_List();
+		
+		
+	}
+	
+}

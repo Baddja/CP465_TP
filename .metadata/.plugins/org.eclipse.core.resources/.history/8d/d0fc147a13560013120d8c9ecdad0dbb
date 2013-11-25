@@ -1,0 +1,41 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class L_List {
+	private Map<Integer, HashMap<ArrayList<String>, Float>> items = new HashMap<Integer, HashMap<ArrayList<String>, Float>>();
+	
+	public L_List(){
+		this.next_level();	
+	}
+	
+	/*
+	 * next_L: 
+	 * 
+	 * Creates an empty hashmap for the next Ln+1
+	 */
+	public void next_level(){
+		items.put(items.size()+1, new HashMap<String[], Float>());
+	}
+	
+	/*
+	 * add_item: item , s
+	 * item - the set of elements that make up an item
+	 * s - the support 
+	 * 
+	 * Adds an item of length n to the hashmap for Ln
+	 */
+	public void add_item(String[] item, Float s){
+		items.get(item.length).put(item, s);
+	}
+	
+	/*
+	 * get_L: int level : Hashmap<Item, Support>
+	 * level - the level of L to be retrieved
+	 * 
+	 * Returns the hashmap containing items in Ln where n is level
+	 */
+	public HashMap<String[], Float> get_L(int level){
+		return items.get(level);
+	}
+}

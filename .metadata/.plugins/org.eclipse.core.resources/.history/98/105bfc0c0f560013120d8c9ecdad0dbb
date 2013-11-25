@@ -1,0 +1,12 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class C_List {
+	private Map<Integer, HashMap<String[], Float>> items = new HashMap<Integer, HashMap<String[], Float>>();
+	
+
+	public C_List {
+		
+	}
+
+}

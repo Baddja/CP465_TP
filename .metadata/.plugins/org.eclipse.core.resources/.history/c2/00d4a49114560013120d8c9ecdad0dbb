@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class C_List {
+	private Map<ArrayList<String>,Float> items = new HashMap<ArrayList<String>,Float>();
+	
+	public C_List() {
+		
+	}
+	
+	public void add_item(ArrayList<String> item, Float s){
+		items.put(item, s);
+	}
+
+	public HashMap<ArrayList<String>, Float> get_C(){
+		return new HashMap<ArrayList<String>, Float>(items);
+	}
+}
