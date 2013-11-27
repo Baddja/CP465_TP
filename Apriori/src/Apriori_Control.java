@@ -12,16 +12,16 @@ public class Apriori_Control {
 		ArrayList<String> test = new ArrayList<String>();
 		test.add("A");
 		l.add_item(test, 0.00f);
-		test.clear();
+		test = new ArrayList<String>();
 		test.add("B");
 		l.add_item(test, 0.00f);
-		test.clear();
+		test = new ArrayList<String>();
 		test.add("C");
 		l.add_item(test, 0.00f);
-		test.clear();
+		test = new ArrayList<String>();
 		test.add("D");
 		l.add_item(test, 0.00f);
-		test.clear();
+		test = new ArrayList<String>();
 		
 		l.print_Ln(1);
 		
