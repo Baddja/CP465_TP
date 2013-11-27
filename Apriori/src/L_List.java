@@ -27,7 +27,9 @@ public class L_List {
 	 * 
 	 * Adds an item of length n to the hashmap for Ln
 	 */
-	public void add_item(ArrayList<String> item, Float s){
+	public void add_item(ArrayList<String> i, Float s){
+		ArrayList<String> item = new ArrayList<String>();
+		item.addAll(i);
 		System.out.println("Adding " + item.toString() + " to L(" + item.size() + ")");
 		this.items.get(item.size()).put(item, s);
 	}

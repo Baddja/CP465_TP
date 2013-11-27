@@ -12,20 +12,22 @@ public class Apriori_Control {
 		ArrayList<String> test = new ArrayList<String>();
 		test.add("A");
 		l.add_item(test, 0.00f);
-		test = new ArrayList<String>();
+		test.clear();
 		test.add("B");
 		l.add_item(test, 0.00f);
-		test = new ArrayList<String>();
+		test.clear();
 		test.add("C");
 		l.add_item(test, 0.00f);
-		test = new ArrayList<String>();
+		test.clear();
 		test.add("D");
 		l.add_item(test, 0.00f);
-		test = new ArrayList<String>();
+		test.clear();
 		
 		l.print_Ln(1);
 		
-		//CB.build_Cn(2, l, c);
+		CB.build_Cn(2, l, c);
+		
+		c.print_C();
 		
 	}
 }

@@ -17,6 +17,10 @@ public class C_List {
 		return new HashMap<ArrayList<String>, Integer>(items);
 	}
 	
+	public void print_C(){
+		System.out.println("C : " + this.items.toString());
+	}
+	
 	public void  clear(){
 		items.clear();
 	}

@@ -10,17 +10,15 @@ public class C_Builder {
 		HashMap<ArrayList<String>, Float> L1 = L.get_Ln(1);
 		HashMap<ArrayList<String>, Float> Lnm1 = L.get_Ln(n-1);
 		
-		//System.out.println(L1.toString());
-		
 		for(ArrayList<String> item_Lnm1 : Lnm1.keySet()){
-			//System.out.println("Ln-1 item: " + item_Lnm1.toString());
 			for(ArrayList<String> item_L1 : L1.keySet()){				
-				ArrayList<String> candidate = new ArrayList<String>();
-				candidate.addAll(item_Lnm1);
-				candidate.addAll(item_L1);
-				
-				//System.out.println(candidate.toString());
-				C.add_item(candidate, 0);
+				if(item_Lnm1.containsAll(item_L1) == false){
+					ArrayList<String> candidate = new ArrayList<String>();
+					candidate.addAll(item_Lnm1);
+					candidate.addAll(item_L1);
+	
+					C.add_item(candidate, 0);
+				}
 			}
 		}
 	}
