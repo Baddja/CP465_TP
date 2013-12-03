@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+
+import java.util.HashSet;
+import java.util.List;
 
 
 public class Apriori_Control {
@@ -9,7 +11,7 @@ public class Apriori_Control {
 		
 		C_Builder CB = new C_Builder();
 		
-		ArrayList<String> test = new ArrayList<String>();
+		HashSet<String> test = new HashSet<String>();
 		test.add("A");
 		l.add_item(test, 0.00f);
 		test.clear();
@@ -29,5 +31,18 @@ public class Apriori_Control {
 		
 		c.print_C();
 		
+		
+		// Below is an example of how to use the FileHandler class to read one line at a time
+		// See FileHandler javadoc for more info
+		
+//		FileHandler fh = new FileHandler("./resources/test.txt", ',', false);
+//		List<String> line;
+//		while ((line=fh.getNextLine()) != null) {
+//			for(String s: line) {
+//				System.out.print(s+",");
+//			}
+//			System.out.println("\n");
+//		}
+//		fh.dispose();
 	}
 }

@@ -1,10 +1,10 @@
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class L_List {
-	private Map<Integer, HashMap<ArrayList<String>, Float>> items = new HashMap<Integer, HashMap<ArrayList<String>, Float>>();
+	private Map<Integer, HashMap<HashSet<String>, Float>> items = new HashMap<Integer, HashMap<HashSet<String>, Float>>();
 	
 	public L_List(){
 		this.next_level();	
@@ -17,7 +17,7 @@ public class L_List {
 	 */
 	public void next_level(){
 		System.out.println("Adding a level for L(" + (items.size()+1) + ")");
-		this.items.put(items.size()+1, new HashMap<ArrayList<String>, Float>());
+		this.items.put(items.size()+1, new HashMap<HashSet<String>, Float>());
 	}
 	
 	/*
@@ -27,8 +27,8 @@ public class L_List {
 	 * 
 	 * Adds an item of length n to the hashmap for Ln
 	 */
-	public void add_item(ArrayList<String> i, Float s){
-		ArrayList<String> item = new ArrayList<String>();
+	public void add_item(HashSet<String> i, Float s){
+		HashSet<String> item = new HashSet<String>();
 		item.addAll(i);
 		System.out.println("Adding " + item.toString() + " to L(" + item.size() + ")");
 		this.items.get(item.size()).put(item, s);
@@ -40,7 +40,7 @@ public class L_List {
 	 * 
 	 * Returns the hashmap containing items in Ln where n is level
 	 */
-	public HashMap<ArrayList<String>, Float> get_Ln(int level){
+	public HashMap<HashSet<String>, Float> get_Ln(int level){
 		System.out.println("Geting L(" + level + ")");
 		return this.items.get(level);
 	}
